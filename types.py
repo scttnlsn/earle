@@ -32,7 +32,7 @@ class RegexEarlePattern(RegexURLPattern, TypeProcessor):
 class RegexEarleResolver(RegexURLResolver, TypeProcessor):
     
     def __init__(self, regex, type_processors, module, kwargs, app_name, namespace):
-        super(RegexEarleResolver, self).__init(regex, module, kwargs, app_name, namespace)
+        super(RegexEarleResolver, self).__init__(regex, module, kwargs, app_name, namespace)
         self.type_processors = type_processors
     
     def resolve(self, path):
